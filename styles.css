@@ -127,6 +127,6 @@ ul.submenu {
 }
 
 .cart-icon {
-    margin-left: 10px; /* Mueve el icono 5px hacia la izquierda */
+    margin-right: 5px; /* Mueve el icono 5px hacia la izquierda */
     font-size: 18px; /* Ajusta el tamaño del icono según sea necesario */
 }
