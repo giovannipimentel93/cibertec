@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-FldwUKT9U7QBe1eP3a5q+KJC5w+W3J+kz8+2fA+1l2c0RSTZWsYQwE3kVOPmqv5/7Ozvr8JlXtV2PYaQ5P1Zxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Giovanni Pimentel Lugo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-FldwUKT9U7QBe1eP3a5q+KJC5w+W3J+kz8+2fA+1l2c0RSTZWsYQwE3kVOPmqv5/7Ozvr8JlXtV2PYaQ5P1Zxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <title>Giovanni Pimentel Lugo</title>
 </head>
 
 <body>
@@ -16,7 +18,7 @@
             <ul class="menu">
                 <li><a href="#">Inicio</a></li>
                 <li>
-                    <a href="#">Productos</a>
+                    <a href="#">Servicios</a>
                     <ul class="submenu">
                         <li><a href="#">Producto1</a></li>
                         <li><a href="#">Producto 2</a></li>
@@ -32,12 +34,6 @@
             <input type="text" placeholder="Buscar...">
             <button><img src="https://img.icons8.com/search" alt="Buscar"></button>
         </div>
-        <div class="cart-container">
-            <div class="cart">
-                <i class="cart-icon">🛒</i>
-                <span class="cart-value">$0.00</span>
-            </div>
-        </div>
     </div>
 
     <div class="popup-container" id="popup">
@@ -49,22 +45,58 @@
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" required><br><br>
                 <button type="button" id="loginButton">Ingresar</button>
+                <button type="button" id="closeButton">Cerrar</button>
                 <p id="error-message" class="error-message"></p>
             </form>
         </div>
     </div>
 
+    <div class="banner">
+        <div class="text-container">
+            <p class="animated-text">Cibertec <br> Diseñando un mundo<br> para ti</p>
+        </div>
+        <div class="cta-buttons">
+            <button class="cta-button">CONTACTANOS</button>
+            <button class="cta-button">BROCHURE</button>
+        </div>
+    </div>
 
+    <div class="nosotros">
+        <div class="imagen">
+            <img src="https://widasperu.com/wp-content/uploads/2022/11/group-of-construction-engineer-working-in-CK8QLJY.jpg"
+                alt="Equipo de ingenieros de construcción" width="643" height="542">
+        </div>
+        <div class="texto">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos un equipo de ingenieros apasionados por la construcción y el diseño arquitectónico. Con más de
+                tres décadas de experiencia en la industria, nos dedicamos a proporcionar soluciones innovadoras y de
+                alta calidad para nuestros clientes. Estamos comprometidos con la excelencia y la satisfacción del
+                cliente en cada proyecto que emprendemos. Nuestra misión es transformar las ideas en realidad,
+                construyendo un futuro mejor para nuestras comunidades y clientes.</p>
+        </div>
+    </div>
 
+    <div class="separacion"></div>
 
-
-
-
-
-
-
-
-
+    <div class="mision-vision">
+        <div class="mision">
+            <h3>Nuestra Misión</h3>
+            <p>Nuestra misión es proporcionar servicios de construcción excepcionales, superando las expectativas de
+                nuestros clientes en términos de calidad, seguridad y tiempo. Estamos comprometidos con la integridad,
+                la innovación y la excelencia en cada proyecto que realizamos.</p>
+            <img src="https://widasperu.com/wp-content/uploads/2022/11/objetivo-150x150.png" alt="Objetivo" width="150"
+                height="150">
+        </div>
+        <div class="vision">
+            <h3>Nuestra Visión</h3>
+            <p>Nuestra visión es ser líderes en la industria de la construcción, reconocidos por nuestra dedicación a
+                la calidad, la sostenibilidad y la satisfacción del cliente. Nos esforzamos por contribuir al
+                desarrollo sostenible de las comunidades en las que trabajamos, creando estructuras duraderas y
+                funcionales.</p>
+            <img src="https://widasperu.com/wp-content/uploads/2022/12/testigo-150x150.png" alt="Testigo" width="150"
+                height="150">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

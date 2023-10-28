@@ -1,5 +1,6 @@
 var popup = document.getElementById("popup");
 var loginButton = document.getElementById("loginButton");
+var closeButton = document.getElementById("closeButton");
 var myAccountLink = document.getElementById("myAccount");
 var errorMessage = document.getElementById("error-message");
 
@@ -10,6 +11,10 @@ function togglePopup() {
 
 loginButton.addEventListener("click", function() {
     validateLogin();
+});
+
+closeButton.addEventListener("click", function() {
+    togglePopup();
 });
 
 myAccountLink.addEventListener("click", function(event) {

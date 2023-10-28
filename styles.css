@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     background-size: cover;
 }
 
+/* Estilos para el header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -104,33 +106,7 @@ ul.submenu {
     width: 20px;
 }
 
-.cart-container {
-    display: flex;
-    align-items: center;
-    margin-right: 90px;
-}
-
-.cart {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
-.cart img {
-    width: 30px;
-    margin-right: 5px;
-}
-
-.cart-value {
-    font-weight: bold;
-}
-
-.cart-icon {
-    margin-right: 5px; /* Mueve el icono 5px hacia la izquierda */
-    font-size: 18px; /* Ajusta el tamaño del icono según sea necesario */
-}
-
+/* Estilos para el popup */
 .popup-container {
     display: none;
     position: fixed;
@@ -152,4 +128,128 @@ ul.submenu {
 
 .error-message {
     color: red;
+}
+
+/* Estilos para el banner */
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)), url('https://widasperu.com/wp-content/uploads/2022/10/construction-site-XBLY83B.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-container {
+    margin-bottom: 0px;
+    margin-top: 300px;
+}
+
+.animated-text {
+    font-size: 64px;
+    color: white;
+    animation: slide-in 2s ease-out forwards;
+    opacity: 0;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: px;
+    margin-top: -200px;
+}
+
+.cta-button {
+    margin: 200px;
+    padding: 25px 50px 25px 50px;
+    background-color: #0C3185;
+    color: white;
+    border: none;
+    border-radius: 40px 40px 40px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos para otras secciones */
+.nosotros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    max-width: 643px;
+    max-height: 542px;
+}
+
+.texto {
+    max-width: 500px;
+}
+
+.texto h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.separacion {
+    height: -100px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.mision,
+.vision {
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+}
+
+.mision h3,
+.vision h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.mision p,
+.vision p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.mision img,
+.vision img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
 }
