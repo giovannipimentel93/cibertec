@@ -35,3 +35,26 @@ function validateLogin() {
         errorMessage.textContent = "Error: Usuario o contraseña incorrectos.";
     }
 }
+
+
+/* Estilos para formulario */
+
+function validarFormulario() {
+    var nombre = document.getElementById("nombre").value;
+    var correo = document.getElementById("correo").value;
+    var asunto = document.getElementById("asunto").value;
+    var mensaje = document.getElementById("mensaje").value;
+
+    if (nombre === "" || correo === "" || asunto === "" || mensaje === "") {
+        alert("Se requiere llenar todos los campos.");
+    } else if (!correo.includes("@")) {
+        alert("Ingrese un correo electrónico válido.");
+    } else {
+        alert("Mensaje enviado.");
+        // Limpiar campos
+        document.getElementById("nombre").value = "";
+        document.getElementById("correo").value = "";
+        document.getElementById("asunto").value = "";
+        document.getElementById("mensaje").value = "";
+    }
+}

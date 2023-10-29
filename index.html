@@ -13,44 +13,48 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="menu-container">
-            <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li>
-                    <a href="#">Servicios</a>
-                    <ul class="submenu">
-                        <li><a href="#">Producto1</a></li>
-                        <li><a href="#">Producto 2</a></li>
-                        <li><a href="#">Producto 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#" id="myAccount">Mi cuenta</a></li>
-            </ul>
+    <div class="Header">
+        <div class="header">
+            <div class="menu-container">
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li>
+                        <a href="#">Servicios</a>
+                        <ul class="submenu">
+                            <li><a href="#">Producto1</a></li>
+                            <li><a href="#">Producto 2</a></li>
+                            <li><a href="#">Producto 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#" id="myAccount">Mi cuenta</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Buscar...">
+                <button><img src="https://img.icons8.com/search" alt="Buscar"></button>
+            </div>
         </div>
-        <div class="search">
-            <input type="text" placeholder="Buscar...">
-            <button><img src="https://img.icons8.com/search" alt="Buscar"></button>
+    
+        <div class="popup-container" id="popup">
+            <div class="popup-content">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required><br><br>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <button type="button" id="loginButton">Ingresar</button>
+                    <button type="button" id="closeButton">Cerrar</button>
+                    <p id="error-message" class="error-message"></p>
+                </form>
+            </div>
         </div>
     </div>
 
-    <div class="popup-container" id="popup">
-        <div class="popup-content">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="username">Usuario:</label>
-                <input type="text" id="username" name="username" required><br><br>
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required><br><br>
-                <button type="button" id="loginButton">Ingresar</button>
-                <button type="button" id="closeButton">Cerrar</button>
-                <p id="error-message" class="error-message"></p>
-            </form>
-        </div>
-    </div>
-
+    <div class="Banner">
+      
     <div class="banner">
         <div class="text-container">
             <p class="animated-text">Cibertec <br> Diseñando un mundo<br> para ti</p>
@@ -61,6 +65,10 @@
         </div>
     </div>
 
+    </div>
+
+    <div class="Nosotros">
+       
     <div class="nosotros">
         <div class="imagen">
             <img src="https://widasperu.com/wp-content/uploads/2022/11/group-of-construction-engineer-working-in-CK8QLJY.jpg"
@@ -96,6 +104,32 @@
             <img src="https://widasperu.com/wp-content/uploads/2022/12/testigo-150x150.png" alt="Testigo" width="150"
                 height="150">
         </div>
+    </div>
+    </div>
+
+    <div class="Formulario">
+        <div class="contacto">
+            <div class="contact-form">
+                <h2>Mandanos un Mensaje</h2>
+              <div class="separador"></div>
+                <input type="text" placeholder="Nombre" id="nombre">
+                <input type="email" placeholder="Correo Electrónico" id="correo">
+                <input type="text" placeholder="Asunto" id="asunto">
+                <textarea placeholder="Mensaje" id="mensaje"></textarea>
+                <button onclick="validarFormulario()">Contactar</button>
+            </div>
+            <div class="map-container">
+                <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=ciudad%20del%20deporte%20mz%20d%20lt%2012%202do%20sector%20izq%20Ventanilla+(widas%20peru)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                    href='https://maps-generator.com/'></a>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="Footer">
+        <!-- Contenido del pie de página aquí -->
     </div>
 
     <script src="script.js"></script>
